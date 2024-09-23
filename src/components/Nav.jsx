@@ -1,13 +1,42 @@
-
+import { useEffect, useState } from 'react';
 
 export default function Nav() {
+    const [activeSection, setActiveSection] = useState('');
+
+    useEffect(() => {
+        const sections = document.querySelectorAll('section');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 // Adjust this value as needed
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        return () => {
+            sections.forEach(section => {
+                observer.unobserve(section);
+            });
+        };
+    }, []);
+
     return(
         <header className='header-container'>
             <nav className='nav-list-container'>
                 <ul className='nav-list'>
-                    <a href="#about"><li>About</li></a>
-                    <a href="#projects"><li>Projects</li></a>
-                    <a><li>Contact</li></a>
+                    <a href="#about" className={activeSection === 'about' ? 'active' : ''}><li>About</li></a>
+                    <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}><li>Projects</li></a>
+                    <a href="#contacts" className={activeSection === 'contacts' ? 'active' : ''}><li>Contact</li></a>
                 </ul>
             </nav>
             <nav className="nav-icon-container">

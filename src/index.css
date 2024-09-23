@@ -87,3 +87,11 @@ a {
 a:hover {
   color: skyblue;
 }
+
+.nav-list a.active {
+  color: skyblue; /* Change to whatever color you want */
+}
+
+.contact-container {
+  height: 100vh;
+}
