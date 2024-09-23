@@ -5,8 +5,8 @@ export default function Nav() {
         <header className='header-container'>
             <nav className='nav-list-container'>
                 <ul className='nav-list'>
-                    <a><li>About</li></a>
-                    <a><li>Projects</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#projects"><li>Projects</li></a>
                     <a><li>Contact</li></a>
                 </ul>
             </nav>
