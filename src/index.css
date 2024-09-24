@@ -89,6 +89,14 @@ a {
   text-decoration: none;
 }
 
+.hero-text-container > a {
+  text-decoration: underline;
+  color: hsl(45, 100%, 52%);
+}
+.hero-text-container > a:hover {
+  color: hsl(45, 100%, 72%);
+}
+
 a:hover {
   color: skyblue;
 }
