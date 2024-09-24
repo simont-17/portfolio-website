@@ -54,11 +54,12 @@ a {
 
 .hero-text-container {
   position: relative;
+  max-width: 1000px; /* Limit width */
+  margin: 0 auto; /* Center the container horizontally */
   
 }
 
 .skills-container {
-  margin: 10px;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -94,4 +95,7 @@ a:hover {
 
 .contact-container {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 50px;
 }

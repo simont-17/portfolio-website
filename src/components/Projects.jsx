@@ -1,7 +1,7 @@
 export default function Projects() {
     return(
         <section className="projects-container" id="projects">
-            <h2>Projects</h2>
+            <h1>Projects</h1>
         </section>
     )
 }
