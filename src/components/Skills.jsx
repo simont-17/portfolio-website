@@ -1,6 +1,7 @@
 export default function Skills() {
     return(
         <section className="skills-container" id="skills">
+            <h1>Technologies</h1>
             <div className="skills-sidebar">
                 <div className="languages-container">
                     <h3>Frontend</h3>

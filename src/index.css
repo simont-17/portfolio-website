@@ -65,11 +65,18 @@ a {
 .skills-container {
   height: 20vh;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   min-height: 100vh;
   background-color: #111;
   color: white;
+  flex-direction: column;
 }
+
+.skills-container h1 {
+  font-size: 2rem;
+  align-self: center;
+}
+
 .skills-sidebar {
   flex-basis: 200px;
 }
