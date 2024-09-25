@@ -67,10 +67,24 @@ a {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  background-color: #111;
+  color: white;
+}
+.skills-sidebar {
+  flex-basis: 200px;
 }
 
-.skills-container > ul {
+.skills-container ul {
   list-style: none;
+  padding: 0;
+}
+.skills-container ul li {
+  background-color: #333;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
 }
 
 .projects-container {

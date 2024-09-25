@@ -1,19 +1,32 @@
 export default function Skills() {
     return(
         <section className="skills-container" id="skills">
-            <h3>Skills</h3>
-            <ul className="frontend-container">
-                <h4>Front-end</h4>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React</li>
-            </ul>
-            <ul className="backend-container">
-                <h4>Back-end</h4>
-                <li>PowerShell</li>
-                <li>Python</li>
-            <   li>SQL</li>
-          </ul>
-    </section>
+            <div className="skills-sidebar">
+                <div className="languages-container">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React.js</li>
+                    </ul>
+                </div>
+                <div className="backend-container">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div classname="tools-container">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </section>
 )
 }
