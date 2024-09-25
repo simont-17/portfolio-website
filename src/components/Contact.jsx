@@ -3,7 +3,7 @@ import Form
 export default function Contact() {
     return (
         <section className="contact-container" id="contacts">
-            <h2>Contact Me</h2>
+            <h1>Contact Me</h1>
             <Form/>
         </section>
     );

@@ -84,6 +84,10 @@ a {
   scroll-margin-top: 50px;
   align-items: center;
   flex-direction: column;
+
+}
+.projects-container >h1 {
+  font-size: 2rem;
 }
 
 
@@ -241,10 +245,14 @@ a:hover {
   color: skyblue
 }
 
+.contact-container > h1 {
+  font-size: 2rem;
+}
+
 .contact-form-container {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+ 
+  padding: 200px;
  
 }
 
