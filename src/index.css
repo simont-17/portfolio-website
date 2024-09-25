@@ -80,16 +80,15 @@ nav a:hover {
   color: skyblue;
   flex-direction: column;
   scroll-margin-top: 50px;
-  border: 1px solid red;
 }
 
 .bottom-container {
   display: flex;
   align-self: center;
+
 }
 
-.skills-head {
-}
+
 
 .chart-container {
   display: flex;
@@ -97,8 +96,6 @@ nav a:hover {
   justify-content: center;
 }
 
-.skills-sidebar {
-}
 
 .skills-container h1 {
   font-size: 2rem;
@@ -118,8 +115,24 @@ nav a:hover {
   border-radius: 5px;
   text-align: center;
   color: white;
+  flex: 1 1 25%;
+}
+.skills-sidebar {
+  flex: 1;
+}
+.skills-grid {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    flex-wrap: wrap; /* Allow the list to wrap if it gets too wide */
+    gap: 20px; /* Control the spacing between the items */
+    flex-direction: column;
 }
 
+.category ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .projects-container {
   min-height: 100vh;
   background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/colorful-bokeh_22FXPJXGDA.jpg);
