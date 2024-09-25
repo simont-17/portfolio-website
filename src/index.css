@@ -236,13 +236,14 @@ a:hover {
 
 /*Form styling */
 .contact-container {
-  height: 100vh;
+  min-height: 100vh;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   scroll-margin-top: 50px;
   flex-direction: column;
   align-items: center;
-  color: skyblue
+  color: skyblue;
 }
 
 .contact-container > h1 {
@@ -251,8 +252,7 @@ a:hover {
 
 .contact-form-container {
   display: flex;
- 
-  padding: 200px;
+  padding: 100px;
  
 }
 
