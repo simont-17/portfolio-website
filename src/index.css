@@ -36,7 +36,7 @@ body, #root {
 
 .hero-container {
   padding: 1px;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(./assets/profile.PNG),url(https://cdn.stocksnap.io/img-thumbs/960w/colorful-bokeh_22FXPJXGDA.jpg);
   background-repeat: no-repeat;
   background-size: 70vh, cover;
@@ -63,13 +63,13 @@ a {
 }
 
 .skills-container {
-  height: 20vh;
   display: flex;
   align-items: baseline;
   min-height: 100vh;
   background-color: #111;
   color: white;
   flex-direction: column;
+  scroll-margin-top: 50px;
 }
 
 .skills-container h1 {
@@ -95,7 +95,7 @@ a {
 }
 
 .projects-container {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/colorful-bokeh_22FXPJXGDA.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,7 +106,6 @@ a {
   scroll-margin-top: 50px;
   align-items: center;
   flex-direction: column;
-
 }
 .projects-container >h1 {
   font-size: 2rem;
@@ -141,9 +140,7 @@ a:hover {
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
-.embla__viewport {
-  overflow: hidden;
-}
+
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;

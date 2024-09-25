@@ -8,7 +8,7 @@ export default function Nav() {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.7 // Adjust this value as needed
+            threshold: 0.6 // Adjust this value as needed
         };
 
         const observer = new IntersectionObserver((entries) => {
