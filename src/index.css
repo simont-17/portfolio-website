@@ -51,6 +51,19 @@ a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: skyblue;
+  scale: 1.1;
+  transition: all 0.3s;
+}
+
+.nav-icon-container ul li a svg {
+  transform: translateX(-2px);
+}
+
+.nav-list a.active {
+  color: skyblue; /* Change to whatever color you want */
+}
 .hero-container {
   color: white;
 }
@@ -122,13 +135,6 @@ a {
   color: hsl(45, 100%, 72%);
 }
 
-a:hover {
-  color: skyblue;
-}
-
-.nav-list a.active {
-  color: skyblue; /* Change to whatever color you want */
-}
 
 
 /*Carousel styling */
@@ -290,7 +296,7 @@ a:hover {
   background-position: bottom right;
 }
 
-.contact-left-section > p > a {
+.contact-left-section p a {
   color: white;
   text-decoration: underline;
   
