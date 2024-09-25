@@ -266,7 +266,6 @@ nav a:hover {
 /*Form styling */
 .contact-container {
   min-height: 100vh;
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   scroll-margin-top: 50px;
