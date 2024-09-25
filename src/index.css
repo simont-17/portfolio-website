@@ -75,6 +75,7 @@ a {
 .skills-container h1 {
   font-size: 2rem;
   align-self: center;
+  padding-bottom: 20px;
 }
 
 .skills-sidebar {
@@ -130,7 +131,7 @@ a:hover {
 }
 
 
-
+/*Carousel styling */
 
 .embla {
   width: 60rem;
