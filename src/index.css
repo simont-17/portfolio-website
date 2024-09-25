@@ -75,12 +75,29 @@ nav a:hover {
 
 .skills-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   min-height: 100vh;
-
   color: skyblue;
   flex-direction: column;
   scroll-margin-top: 50px;
+  border: 1px solid red;
+}
+
+.bottom-container {
+  display: flex;
+  align-self: center;
+}
+
+.skills-head {
+}
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-sidebar {
 }
 
 .skills-container h1 {
@@ -89,9 +106,6 @@ nav a:hover {
   padding-bottom: 20px;
 }
 
-.skills-sidebar {
-  flex-basis: 200px;
-}
 
 .skills-container ul {
   list-style: none;
