@@ -77,8 +77,8 @@ nav a:hover {
   display: flex;
   align-items: baseline;
   min-height: 100vh;
-  background-color: #111;
-  color: white;
+
+  color: skyblue;
   flex-direction: column;
   scroll-margin-top: 50px;
 }
@@ -98,7 +98,7 @@ nav a:hover {
   padding: 0;
 }
 .skills-container ul li {
-  background-color: #333;
+  background-color: skyblue;
   margin-bottom: 5px;
   padding: 5px;
   border-radius: 5px;

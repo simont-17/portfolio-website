@@ -1,6 +1,9 @@
+import Chart from "./Chart"
+
 export default function Skills() {
     return(
         <section className="skills-container" id="skills">
+            
             <h1>Technologies</h1>
             <div className="skills-sidebar">
                 <div className="languages-container">
@@ -19,14 +22,15 @@ export default function Skills() {
                         <li>SQL</li>
                     </ul>
                 </div>
-                <div classname="tools-container">
+                <div className="tools-container">
                     <h3>Tools</h3>
                     <ul>
                         <li>Git</li>
                     </ul>
                 </div>
-
-
+            </div>
+            <div className="chart-container">
+                <Chart/>
             </div>
         </section>
 )
