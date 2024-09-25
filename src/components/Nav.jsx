@@ -35,6 +35,7 @@ export default function Nav() {
             <nav className='nav-list-container'>
                 <ul className='nav-list'>
                     <a href="#about" className={activeSection === 'about' ? 'active' : ''}><li>About</li></a>
+                    <a href="#skills" className={activeSection === 'skills' ? 'active' : ''}><li>Technologies</li></a>
                     <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}><li>Projects</li></a>
                     <a href="#contacts" className={activeSection === 'contacts' ? 'active' : ''}><li>Contact</li></a>
                 </ul>

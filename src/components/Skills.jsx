@@ -1,6 +1,6 @@
 export default function Skills() {
     return(
-        <div className="skills-container">
+        <section className="skills-container" id="skills">
             <h3>Skills</h3>
             <ul className="frontend-container">
                 <h4>Front-end</h4>
@@ -14,6 +14,6 @@ export default function Skills() {
                 <li>Python</li>
             <   li>SQL</li>
           </ul>
-    </div>
+    </section>
 )
 }

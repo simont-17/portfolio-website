@@ -66,6 +66,7 @@ a {
   height: 20vh;
   display: flex;
   align-items: center;
+  min-height: 100vh;
 }
 
 .skills-container > ul {
