@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 export default function Nav() {
     const [activeSection, setActiveSection] = useState('');
+    console.log('Observing sections:', activeSection);
 
     useEffect(() => {
         const sections = document.querySelectorAll('section');
