@@ -37,7 +37,7 @@ body, #root {
 .hero-container {
   padding: 1px;
   min-height: 100vh;
-  background-image: url(./assets/profile.PNG),url(https://cdn.stocksnap.io/img-thumbs/960w/colorful-bokeh_22FXPJXGDA.jpg);
+  background-image: url(./assets/subject.PNG),url(https://cdn.stocksnap.io/img-thumbs/960w/colorful-bokeh_22FXPJXGDA.jpg);
   background-repeat: no-repeat;
   background-size: 70vh, cover;
   background-position: bottom, center;
