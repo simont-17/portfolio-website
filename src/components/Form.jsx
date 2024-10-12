@@ -1,23 +1,6 @@
-import { useState } from 'react';
+import React from 'react';
 
 export default function Form() {
-  // State should be defined at the root level of the component
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); // Handle form submission here
-  };
-
   return (
     <div className="contact-form-container">
       <div className="contact-left-section">
@@ -30,28 +13,33 @@ export default function Form() {
           Leave a message below if you're interested in learning more about my
           projects in progress or if you're interested in hiring me!
         </p>
-        <form onSubmit={handleSubmit}>
+        <form
+          name="Contact" // Ensure this name matches the one used in Netlify
+          method="POST"
+          data-netlify="true" // Enable Netlify form handling
+          netlify-honeypot="bot-field" // Optional: Prevent spam
+        >
+          <input type="hidden" name="Contact" value="Contact" />
+          <p style={{ display: 'none' }}>
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           <input
             type="text"
             name="name"
             placeholder="First Last"
-            value={formData.name}
-            onChange={handleChange}
             required
           />
           <input
             type="email"
             name="email"
             placeholder="name@email.com"
-            value={formData.email}
-            onChange={handleChange}
             required
           />
           <textarea
             name="message"
             placeholder="Write text here..."
-            value={formData.message}
-            onChange={handleChange}
             required
           />
           <button type="submit" className="send-message-button">
