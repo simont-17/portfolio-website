@@ -1,14 +1,13 @@
 import Carousel from "./EmblaCarousel"
+import projectSlides from '../data/projectSlides'
 
-const OPTIONS = {loop:true}
-const SLIDE_COUNT = 3
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+const OPTIONS = { loop: true };
 
 export default function Projects() {
-    return(
-        <section className="projects-container" id="projects">
-            <h1>Projects</h1>
-            <Carousel slides={SLIDES} options={OPTIONS}/>
-        </section>
-    )
+  return (
+    <section className="projects-container" id="projects">
+      <h1>Projects</h1>
+      <Carousel slides={projectSlides} options={OPTIONS} />
+    </section>
+  );
 }

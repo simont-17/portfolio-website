@@ -166,12 +166,12 @@ nav a:hover {
 /*Carousel styling */
 
 .embla {
-  width: 60rem;
-  max-width: 60rem;
+  width: 60rem; 
+  max-width: 100%; 
   margin: auto;
-  --slide-height: 19rem;
-  --slide-spacing: 1rem;
-  --slide-size: 100%;
+  --slide-height: 19rem; 
+  --slide-spacing: 1rem; 
+  --slide-size: calc(100% - var(--slide-spacing)); 
 }
 
 .embla__viewport {
@@ -179,40 +179,62 @@ nav a:hover {
 }
 
 .embla__container {
-  display: flex;
+  display: flex; 
   touch-action: pan-y pinch-zoom;
-  margin-left: calc(var(--slide-spacing) * -1);
+  margin-left: calc(var(--slide-spacing) * -1); 
 }
+
 .embla__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
   min-width: 0;
-  padding-left: var(--slide-spacing);
+  padding-left: var(--slide-spacing); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
-.embla__slide__number {
-  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-  border-radius: 1.8rem;
-  font-size: 4rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--slide-height);
-  user-select: none;
+
+.embla__slide__image {
+  max-width: 100%; 
+  max-height: 100%; 
+  height: auto; 
+  object-fit: cover; 
 }
+
+.embla__slide__title {
+  text-align: center;
+  margin-top: 0.5rem; 
+  font-size: 1.5rem; 
+  color: hsl(45, 100%, 60%);
+}
+
+
+.embla__slide__skills strong {
+  color: hsl(45, 100%, 60%);
+}
+
+
+
+.embla__slide__link {
+  margin-top: 0.5rem; 
+}
+
 .embla__controls {
   display: grid;
-  grid-template-columns: auto 1fr;
-  justify-content: space-between;
-  gap: 1.2rem;
-  margin-top: 1.8rem;
+  grid-template-columns: auto 1fr; 
+  justify-content: space-between; 
+  gap: 1.2rem; 
+  margin-top: 1.8rem; 
 }
+
 .embla__buttons {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.6rem;
-  align-items: center;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 0.6rem; 
+  align-items: center; 
 }
+
+
 .embla__button {
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
   -webkit-appearance: none;
@@ -226,8 +248,8 @@ nav a:hover {
   padding: 0;
   margin: 0;
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 3.6rem; 
+  height: 3.6rem; 
   z-index: 1;
   border-radius: 50%;
   color: var(--text-body);
@@ -235,27 +257,18 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
-.embla__button:disabled {
-  color: var(--detail-high-contrast);
-}
-.embla__button__svg {
-  width: 35%;
-  height: 35%;
-}
-.embla__button:active {
-  color:skyblue;
-}
-.embla__button__svg:active {
-  color:skyblue;
-}
+
+
+
 
 .embla__dots {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: flex-end; 
+  align-items: center; /* Center vertically */
   margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
 }
+
 .embla__dot {
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
   -webkit-appearance: none;
@@ -268,17 +281,18 @@ nav a:hover {
   border: 0;
   padding: 0;
   margin: 0;
-  width: 2.6rem;
+  width: 2.6rem; 
   height: 2.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
 }
+
 .embla__dot:after {
-  box-shadow: inset 0 0 0 0.2rem white; /* Replace with a solid color to test */
-  width: 1.4rem;
-  height: 1.4rem;
+  box-shadow: inset 0 0 0 0.2rem white; 
+  width: 1.4rem; /* Inner dot size */
+  height: 1.4rem; /* Inner dot size */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -286,7 +300,12 @@ nav a:hover {
 }
 
 .embla__dot--selected:after {
-  box-shadow: inset 0 0 0 0.2rem skyblue; /* Replace with a solid color for the selected state */
+  box-shadow: inset 0 0 0 0.2rem skyblue; 
+}
+
+.embla__slide__link:hover {
+  color:hsl(45, 100%, 72%);
+  
 }
 
 
