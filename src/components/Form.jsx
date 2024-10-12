@@ -30,7 +30,7 @@ export default function Form() {
           Leave a message below if you're interested in learning more about my
           projects in progress or if you're interested in hiring me!
         </p>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} netlify>
           <input
             type="text"
             name="name"
