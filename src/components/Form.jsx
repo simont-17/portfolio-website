@@ -12,8 +12,21 @@ export default function Form() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    console.log(formData); 
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+
+    if (response.ok) {
+      console.log("Form submitted successfully");
+      // You might want to reset the form or show a success message
+    } else {
+      console.error("Form submission error");
+    }
   };
 
   return (
