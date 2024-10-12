@@ -1,4 +1,6 @@
 import projectivity from '../assets/slide_projectivity.png'
+import portfolio from '../assets/slide_portfolio.png'
+import wip from '../assets/wip-dog.png'
 
 const projectSlides = [
     {
@@ -9,18 +11,18 @@ const projectSlides = [
       skillsUsed: ['React', 'Node.js', 'Express.js', 'JavaScript', 'CSS', 'HTML']
     },
     {
-      image: 'https://example.com/image2.jpg',
-      title: 'Project Two',
-      githubLink: 'https://github.com/username/project-two',
-      description: 'This is a test.',
-      skillsUsed: ['React', 'Node.js', 'Express.js', 'JavaScript', 'CSS', 'HTML']
+      image: portfolio,
+      title: 'Portfolio',
+      githubLink: 'https://github.com/simont-17/portfolio-website',
+      description: 'This portfolio website is my first project in React, aimed at deepening my understanding of the framework and integrating external libraries. It showcases my ability to create a user-friendly, responsive interface while applying web development best practices. This project highlights my growth as a developer and my commitment to continuous learning.',
+      skillsUsed: ['React','JavaScript', 'CSS', 'HTML']
     },
     {
-      image: 'https://example.com/image3.jpg',
-      title: 'Project Three',
+      image: wip,
+      title: 'Appetite',
       githubLink: 'https://github.com/username/project-three',
-      description: 'This is a test.',
-      skillsUsed: ['React', 'Node.js', 'Express.js', 'JavaScript', 'CSS', 'HTML']
+      description: 'Not ready for display just yet but I would love for you to reach out to talk about this! This project will be my most challenging yet, further developing my skillset.',
+      skillsUsed: ['React Native', 'Node.js', 'Express.js', 'MongoDB', 'CSS', 'HTML']
     }
   ]
   
