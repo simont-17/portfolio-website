@@ -14,17 +14,9 @@ export default function Form() {
           projects in progress or if you're interested in hiring me!
         </p>
         <form
-          name="Contact" // Ensure this name matches the one used in Netlify
-          method="POST"
-          data-netlify="true" // Enable Netlify form handling
-          netlify-honeypot="bot-field" // Optional: Prevent spam
+          action="https://formspree.io/f/movqqvgo" 
+          method="POST" 
         >
-          <input type="hidden" name="Contact" value="Contact" />
-          <p style={{ display: 'none' }}>
-            <label>
-              Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
-          </p>
           <input
             type="text"
             name="name"
