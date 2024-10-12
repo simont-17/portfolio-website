@@ -13,7 +13,6 @@ export default function Form() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     console.log(formData); 
   };
 
