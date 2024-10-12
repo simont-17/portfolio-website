@@ -19,7 +19,7 @@ export default function Form() {
           data-netlify="true" // Enable Netlify form handling
           netlify-honeypot="bot-field" // Optional: Prevent spam
         >
-          <input type="hidden" name="form-name" value="Contact" />
+          <input type="hidden" name="Contact" value="Contact" />
           <p style={{ display: 'none' }}>
             <label>
               Don’t fill this out if you’re human: <input name="bot-field" />
