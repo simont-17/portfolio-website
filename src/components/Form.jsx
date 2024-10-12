@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 export default function Form() {
-  // State should be defined at the root level of the component
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,7 +14,7 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // Handle form submission here
+    console.log(formData); 
   };
 
   return (
@@ -30,7 +29,13 @@ export default function Form() {
           Leave a message below if you're interested in learning more about my
           projects in progress or if you're interested in hiring me!
         </p>
-        <form onSubmit={handleSubmit} netlify>
+        <form
+          name="Contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit={handleSubmit}
+        >
+          <input type="hidden" name="form-name" value="Contact" />
           <input
             type="text"
             name="name"
