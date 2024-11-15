@@ -405,6 +405,7 @@ textarea {
     flex-direction: column; /* Stack items vertically */
     align-items: center;
     padding: 10px;
+    position: static;
   }
 
   .nav-list-container, .nav-icon-container {
@@ -431,5 +432,33 @@ textarea {
   .icon-tabler {
     width: 30px;
     height: 30px;
+  }
+}
+/* Responsive form styling */
+@media (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .contact-left-section, .contact-right-section {
+    width: 100%; /* Set each section to full width */
+    padding: 10px;
+  }
+
+  .contact-left-section {
+    background-size: 50%; /* Adjust background image size */
+  }
+}
+
+@media (max-width: 480px) {
+  input, textarea {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px; /* Adjust padding for input fields */
+  }
+
+  .send-message-button {
+    padding: 8px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
   }
 }
