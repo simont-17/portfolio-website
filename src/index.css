@@ -200,6 +200,9 @@ nav a:hover {
   max-height: 100%; 
   height: auto; 
   object-fit: cover; 
+  justify-content: center;
+  align-items: center;
+    
 }
 
 .embla__slide__title {
